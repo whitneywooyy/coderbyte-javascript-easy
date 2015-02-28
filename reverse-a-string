@@ -1,0 +1,20 @@
+// CHALLENGE 1 - First Reverse (reverses a string)
+//------------------------------------------------------------------
+
+// 'thanks' creates an empty string
+	var thanks = "";
+	function FirstReverse(str) {
+		// This 'for' loop begins at the end of the string and counts down
+		// 'i' must be (str.length - 1) since the actual length would produce an undefined element at the end
+		for (var i = str.length - 1; i >= 0; i--) {
+		// 'thanks' assigns the results of 'str' back to 'thanks'
+		thanks = thanks + str[i];
+		} 
+	return thanks; 
+    }
+	var name = "Whitney Woolstenhulme";
+	document.write("String: " + name + "<br><br>");
+	document.write("Result: " + FirstReverse(name))
+	
+//------------------------------------------------------------------
+// SEE IT IN ACTION: http://jsfiddle.net/whitneywooyy/nhjar877/
