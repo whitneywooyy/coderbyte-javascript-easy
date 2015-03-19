@@ -1,0 +1,31 @@
+function LetterCapitalize(str) {
+
+    var newstr = "";
+
+    // Search for spaces in the string, and then capitalize the first letter following the space
+
+    // loop through the string to find the spaces
+    // when there's a space, add 1 and .toUpperCase() that character
+
+    if (str.charAt(0)) {
+        newstr += str.charAt(0).toUpperCase();
+    }
+
+    for (var i = 1; i < str.length; i++) {
+        if (str.charAt(i - 1) === " ") {
+            newstr += str.charAt(i).toUpperCase();
+        } else {
+            newstr += str[i];
+        }
+    }
+ 
+    return newstr;
+
+}
+
+var str = "this is a dumb sentence.";
+console.log(LetterCapitalize(str));
+
+
+// --------------------------------------------------------------------------------------------------------
+// View this code in action at http://jsfiddle.net/whitneywooyy/tbdLtpmx/
