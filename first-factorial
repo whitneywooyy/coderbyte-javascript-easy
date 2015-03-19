@@ -1,4 +1,4 @@
-// Challenge 2 - First Factorial
+// CHALLENGE 2 - First Factorial
 // Task: Determine the factorial for a given number (recursion)
 // For example, if the number is 4, the function finds 4 * 3 * 2 * 1
 //------------------------------------------------------------------------------
@@ -18,8 +18,8 @@
 			return num * (FirstFactorial(num - 1));
 		}     
 	}
-	document.write("Number: " + num + "<br><br>");
-	document.write("Result: " + FirstFactorial(num))
+	console.log("Number: " + num);
+	console.log("Result: " + FirstFactorial(num))
 
 //------------------------------------------------------------------------------
-// See it in action at: http://jsfiddle.net/whitneywooyy/43nba9j4/
+// SEE IT IN ACTION: http://jsfiddle.net/whitneywooyy/1sLhxz9p/
