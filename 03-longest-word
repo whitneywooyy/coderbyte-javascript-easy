@@ -1,0 +1,29 @@
+// CHALLENGE 3 - Longest Word
+// --------------------------------------------------------------------------
+
+function LongestWord(sen) { 
+    var newArr = sen.split(" ");    // sen.split(" ") is splitting each word in 'sen' by where a space occurs
+    var newText = [];    // newText = []; is declaring an empty array for each string (word) from 'newArr' to be housed within
+    for (var i = 0; i < newArr.length; i++) {    // The 'for' loop loops through the length of 'newArr' by element 
+        newText[i] = newArr[i].replace(/\W/g, "");    // newText is assigned each element from newArr, which is also deleting ALL punctuations within newArr simultaneously (including spaces)
+    }
+    var longestWord = newText[0];    // The first element in 'newText' is assigned to 'longestWord' to act as a comparison 
+    for (var j = 1; j < newText.length; j++) {    // A new counter, 'j' is declared.
+        // (Uncomment the next line to see how this is operating.)
+        // console.log("longestword.length is: " + longestWord.length + " newText[j] is: " + newText[j].length + "<br/>");
+        // Compares lengths of each element (word) in 'longestWord' and 'newText'
+        // If any element in 'newText' is greater than the FIRST element in 'newText' (longestWord), 'longestWord' will then be assigned the new longest word, and then all future comparisons are made with the NEW longest word
+        if (longestWord.length < newText[j].length) {
+            longestWord = newText[j];
+        }         
+    }
+     
+    return longestWord;         
+}
+var sen = "The mad hatter is mad because he hates jimminy's cricket's jacket, which is a type of jelly.";
+console.log("The sentence: " + sen);
+console.log("The longest word in the sentence: " + LongestWord(sen));
+
+
+// --------------------------------------------------------------------------
+// SEE IT IN ACTION: http://jsfiddle.net/whitneywooyy/6v53fuv5/
