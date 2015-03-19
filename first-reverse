@@ -13,8 +13,8 @@
 	return thanks; 
     }
 	var name = "Whitney Woolstenhulme";
-	document.write("String: " + name + "<br><br>");
-	document.write("Result: " + FirstReverse(name))
+	console.log("String: " + name + "<br><br>");
+	console.log("Result: " + FirstReverse(name))
 	
 //------------------------------------------------------------------
-// SEE IT IN ACTION: http://jsfiddle.net/whitneywooyy/nhjar877/
+// SEE IT IN ACTION: http://jsfiddle.net/whitneywooyy/0z5d05fg/
