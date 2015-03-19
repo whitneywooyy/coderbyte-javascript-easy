@@ -1,0 +1,19 @@
+// CHALLENGE 5 - Simple Adding
+// ----------------------------------------------------------------------
+
+
+/* Using the JavaScript language, have the function SimpleAdding(num) add up all the numbers from 1 to num. For the test cases, the parameter num will be any number from 1 to 1000. */
+
+function SimpleAdding(num) {
+    var totalNum = 0;
+    for (var i = 0; i <= num; i++) {
+        totalNum += i;
+    }
+return totalNum;       
+}
+var num = 5;
+console.log("Original number: " + num);
+console.log("The sum of all numbers from 1 to " + num + " = " + SimpleAdding(num));
+
+// ----------------------------------------------------------------------
+// SEE IT IN ACTION: http://jsfiddle.net/whitneywooyy/w2zkynx3/
