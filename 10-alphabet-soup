@@ -1,0 +1,23 @@
+// CHALLENGE 10 - Alphabet Soup
+/* Using the JavaScript language, have the function AlphabetSoup(str) take the str string parameter being passed and return the string with the letters in alphabetical order (ie. hello becomes ehllo). Assume numbers and punctuation symbols will not be included in the string. */
+// --------------------------------------------------------------------
+
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+function AlphabetSoup(str) {
+    var newStr = "";
+    for (var i = 0; i < alphabet.length; i++) {
+        for (var j = 0; j < str.length; j++) {
+            if (alphabet[i] === str[j]) {
+                newStr += str[j];    
+            }
+        }
+    }
+    console.log(newStr);
+}
+
+var str = "justwanttofreakingkill";
+AlphabetSoup(str);
+
+// --------------------------------------------------------------------
+// SEE IT IN ACTION: http://jsfiddle.net/whitneywooyy/ftukwnfy/
